@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('assets/img/background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .category {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            position: relative;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+
+        .category-text {
+            background: #000;
+            width: 100%;
+            height: 100px;
+            transition: height 0.15s ease-out;
+            overflow: hidden;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FCD905;
+        }
+
+        .category-text:hover {
+            height: 100%;
+            transition: height 0.25s ease-in;
+            opacity: .9;
+            border-radius: 10px;
+        }
+
+        .offcanvas-bottom {
+            height: 100vh;
+        }
+
+        .category-item {
+            width: 100%;
+            height: auto;
+            text-decoration: none;
+            display: flex;
+            gap: .5rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-item img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .category-item h5 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-8">
+                <div class="d-flex align-items-center justify-content-center gap-3 py-5 mb-3">
+                    <img src="assets/img/logo.jpg" class="rounded-circle" width="80" alt="">
+                    <h1><sup>By</sup> Zahiraa</h1>
+                </div>
+            </div>
+
+
+            <!-- category  -->
+            <div class="col-md-8">
+                <div class="category shadow" style="background-image: url(assets/category/woman-fashion.jpg);">
+                    <h1 class="category-text" data-bs-toggle="offcanvas" data-bs-target="#woman-fashion">Woman Fashion
+                    </h1>
+                </div>
+                <div class="category shadow" style="background-image: url(assets/category/man-fashion.jpg);">
+                    <h1 class="category-text" data-bs-toggle="offcanvas" data-bs-target="#man-fashion">Man Fashion</h1>
+                </div>
+                <div class="category shadow" style="background-image: url(assets/category/kids-stuff-fashion.jpg);">
+                    <h1 class="category-text" data-bs-toggle="offcanvas" data-bs-target="#kids-stuff-fashion">Kids Stuff
+                        and Fashion</h1>
+                </div>
+                <div class="category shadow" style="background-image: url(assets/category/home-living.jpg);">
+                    <h1 class="category-text" data-bs-toggle="offcanvas" data-bs-target="#home-living">Home Living</h1>
+                </div>
+                <div class="category shadow" style="background-image: url(assets/category/kitchen-stuff.jpg);">
+                    <h1 class="category-text" data-bs-toggle="offcanvas" data-bs-target="#kitchen-stuff">Kitchen Stuff
+                    </h1>
+                </div>
+            </div>
+
+            <!-- list produk / Woman Fashion  -->
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="woman-fashion">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Woman Fashion</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="category-item shadow">
+                                <img src="assets/woman-fashion/001.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>PREMIUM ROK PREMIUM PLISKET// FREE TALI// MOUBLE IMPORT</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">001</p>
+                                        <a href="https://shope.ee/99kUUJOV9c" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/woman-fashion/002.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>AURA LASERCUT SUPERFINE COTTON VOAL BASIC SEGIEMPAT 115x115 cm</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">002</p>
+                                        <a href="https://shope.ee/8p7e5wkNu4" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/woman-fashion/003.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Celana Kulot Crinkle Highwaist Wanita Loose Cullote Pants 3412</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">003</p>
+                                        <a href="https://shope.ee/79zQ73qp6G" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- list produk / Man Fashion  -->
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="man-fashion">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Man Fashion</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="category-item shadow">
+                                <img src="assets/man-fashion/001.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>UNIQUE - Kaos Polos Oversize Pocket Cotton Combed 24s Pria & Wanita</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">001</p>
+                                        <a href="https://shope.ee/6A6svLe3to" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/man-fashion/002.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Erigo Chino Pants Sirius Black</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">002</p>
+                                        <a href="https://shope.ee/6UjjJztaGO" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/man-fashion/003.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>JB Long Shirt PSY Olive</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">003</p>
+                                        <a href="https://shope.ee/6zfzuzcFtI" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- list produk / Kids stuff anda fashion  -->
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="kids-stuff-fashion">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Kids Stuff and Fashion</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/001.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Garlic butter MPASI, Bumbu Bunda</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">001</p>
+                                        <a href="https://shope.ee/79zHR9CjRq" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/002.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Kecap manis organik MPASI, Bumbu Bunda</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">002</p>
+                                        <a href="https://shope.ee/2VDSaKhNyq" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/003.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Baby food container kaca MPASI</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">003</p>
+                                        <a href="https://shope.ee/5fAYsQ39hh" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/004.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Papan edukasi anak</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">004</p>
+                                        <a href="https://shope.ee/9p03JjLxMu" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/005.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Puzzle rolling ball</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">005</p>
+                                        <a href="https://shope.ee/9UNCv56R0K" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/006.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Ice Popsicle Mould Cetakan Es Popsickle</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">006</p>
+                                        <a href="https://shope.ee/4zurwW7IGG" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kids-stuff-fashion/007.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Premium Silicone Set Alat Tempat Makan Anak</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">007</p>
+                                        <a href="https://shope.ee/A9cyL8IA6K" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- list produk / Home Living  -->
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="home-living">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Home Living</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="category-item shadow">
+                                <img src="assets/home-living/001.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>SPREI KOTAK SEPRAI HOMEMADE SEPREI MOTIF POLOS EMBOS 120,160,180</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">001</p>
+                                        <a href="https://shope.ee/3fPXwwDrhB" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/home-living/002.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>Rak buku serbaguna lemari multi fungsi rak sepatu portable</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">002</p>
+                                        <a href="https://shope.ee/8zR4Imf9OM" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/home-living/003.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>TERBARU!! BIG STAND HANGER/GANTUNGAN BAJU,TOPI,TAS</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">003</p>
+                                        <a href="https://shope.ee/4fI58tTR3I" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- list produk / Kitchen Stuff  -->
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="kitchen-stuff">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Kitchen Stuff</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="category-item shadow">
+                                <img src="assets/kitchen-stuff/001.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>BOLDë Panci / Super Pan Wok 28 cm - Beige</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">001</p>
+                                        <a href="https://shope.ee/99kUVFRg2a" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kitchen-stuff/002.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>PERO WOK PAN 24CM</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">002</p>
+                                        <a href="https://shope.ee/9UNKttuBxw" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kitchen-stuff/003.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>BOLDe Super Set Pisau / Knive Utensil Marbella Set 6 Pcs</h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">003</p>
+                                        <a href="https://shope.ee/20HJyBqGnJ" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-item shadow">
+                                <img src="assets/kitchen-stuff/004.jpg" alt="">
+                                <div class="p-2 w-100 d-flex flex-column justify-content-between">
+                                    <h5>GM Bear Panci Wajan Teflon Set isi 3 pcs - Arria Panci Teflon Penggorengan Set
+                                    </h5>
+                                    <div class="d-flex w-100 justify-content-between align-items-end">
+                                        <p class="text-muted m-0">004</p>
+                                        <a href="https://shope.ee/5fAcKzWIOO" class="btn btn-warning btn-sm">Buka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="row"><small class="col-12 py-3 text-muted text-center">copyright &copy; by.zahiraa</small>
+        </footer>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
